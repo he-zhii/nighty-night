@@ -1,0 +1,114 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--s-lg);
+    background-color: var(--c-bg-page);
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--c-text-secondary);
+    margin-bottom: var(--s-xxl);
+}
+
+.title {
+    font-family: var(--font-serif);
+    color: var(--c-text-primary);
+    line-height: 1.1;
+    margin-bottom: var(--s-lg);
+}
+
+.titleSmall {
+    font-size: 2rem;
+    font-family: var(--font-sans);
+    /* Contrast */
+    font-weight: 300;
+    display: block;
+    margin-bottom: var(--s-xs);
+}
+
+.titleBig {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: var(--c-accent);
+    margin-bottom: var(--s-lg);
+}
+
+.subtitle {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--c-text-secondary);
+    font-weight: 300;
+    margin-bottom: var(--s-xxl);
+}
+
+.visualElement {
+    position: absolute;
+    right: -50px;
+    top: 30%;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--c-text-primary);
+    border-radius: 50%;
+}
+
+.startButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--s-md) var(--s-lg);
+    background-color: var(--c-text-primary);
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: transform 0.2s var(--ease-out);
+    position: relative;
+    z-index: 1;
+}
+
+.startButton:active {
+    transform: scale(0.98);
+}
+
+.buttonArrow {
+    font-family: var(--font-display);
+}
+
+.footer {
+    text-align: center;
+    font-family: var(--font-display);
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-lg);
+}
+
+/* Mobile Tweaks */
+@media (max-width: 375px) {
+    .titleBig {
+        font-size: 3rem;
+    }
+}

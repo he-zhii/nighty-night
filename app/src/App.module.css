@@ -1,0 +1,21 @@
+.app {
+    width: 100%;
+    height: 100%;
+    /* Full viewport height */
+    max-width: 480px;
+    /* Max width for consistency on desktop */
+    margin: 0 auto;
+    background-color: var(--c-bg-page);
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow on desktop */
+
+    /* Safe Area Support */
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (max-width: 480px) {
+    .app {
+        box-shadow: none;
+    }
+}

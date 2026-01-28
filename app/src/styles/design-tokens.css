@@ -1,0 +1,37 @@
+:root {
+  /* Colors */
+  --c-bg-page: #F9F7F5; /* Warm/Creamy Background */
+  --c-text-primary: #2C2C2C;
+  --c-text-secondary: #666666;
+  --c-text-muted: #999999;
+  
+  --c-accent: #C8553D; /* Muted Red - for primary actions */
+  --c-highlight: #E6DCCD; /* Beige - for active states */
+  --c-border: #E0E0E0;
+
+  /* Typography */
+  --font-serif: 'Noto Serif SC', serif;
+  --font-sans: 'Noto Sans SC', sans-serif;
+  --font-display: 'Playfair Display', serif;
+
+  /* Spacing */
+  --s-xs: 4px;
+  --s-sm: 8px;
+  --s-md: 16px;
+  --s-lg: 24px;
+  --s-xl: 32px;
+  --s-xxl: 48px;
+
+  /* Animation */
+  --ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body {
+  background-color: var(--c-bg-page);
+  color: var(--c-text-primary);
+  font-family: var(--font-sans);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

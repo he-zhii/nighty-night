@@ -1,0 +1,159 @@
+.container {
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--c-bg-page);
+    padding: var(--s-lg);
+    position: relative;
+    /* Use theme color for scrollbar thumb if custom scrollbar needed */
+}
+
+
+
+.contentWrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-display);
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: var(--c-text-muted);
+    margin-bottom: var(--s-xl);
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: var(--s-sm);
+}
+
+.intro {
+    margin-bottom: var(--s-md);
+}
+
+.introText {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--c-text-secondary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--c-theme, var(--c-accent));
+    /* Theme Line */
+    padding-bottom: 4px;
+}
+
+.cityTitleBlock {
+    display: flex;
+    align-items: center;
+    gap: var(--s-md);
+    margin-bottom: var(--s-sm);
+    color: var(--c-theme, var(--c-text-primary));
+    /* Theme Color */
+}
+
+.cityName {
+    font-family: var(--font-serif);
+    font-size: 4.5rem;
+    /* Reduced slightly to fit */
+    font-weight: 700;
+    line-height: 1;
+}
+
+.diamond {
+    font-size: 1rem;
+    opacity: 0.6;
+}
+
+.subtitle {
+    font-family: var(--font-serif);
+    /* Serif for elegance */
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--c-text-primary);
+    margin-bottom: var(--s-lg);
+    font-weight: 400;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s-xs);
+    margin-bottom: var(--s-xl);
+    font-family: var(--font-sans);
+    color: var(--c-text-secondary);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.dot {
+    margin: 0 4px;
+    color: var(--c-text-muted);
+    font-weight: bold;
+}
+
+.quoteBox {
+    margin: 0 var(--s-md) var(--s-xl);
+    padding: var(--s-lg);
+    border: 1px solid var(--c-border);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent */
+}
+
+.quote {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--c-text-primary);
+}
+
+.restartLink {
+    margin-bottom: var(--s-xxl);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    text-decoration: underline;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.restartLink:hover {
+    color: var(--c-theme, var(--c-text-primary));
+}
+
+/* Details */
+.details {
+    width: 100%;
+}
+
+.section p {
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--c-text-secondary);
+    margin-bottom: var(--s-md);
+    text-align: justify;
+}
+
+.divider {
+    width: 20px;
+    height: 2px;
+    background-color: var(--c-border);
+    margin: var(--s-lg) auto;
+}
+
+.lifestyle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    line-height: 1.6;
+}
